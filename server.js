@@ -4,7 +4,7 @@ var app = express()
 const commandLineArgs = require('command-line-args')
 
 const optionDefinitions = [
-    { name: 'port', alias: 'p', type: Number }
+    { name: 'port', alias: 'p', type: Number, defaultValue: 8080 }
   ]
 
 const options = commandLineArgs(optionDefinitions)
